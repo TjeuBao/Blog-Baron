@@ -42,6 +42,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'rails-erd'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'listen'
   gem 'web-console'
@@ -91,3 +92,4 @@ gem 'rqrcode_png'
 gem 'sentry-ruby'
 gem 'slim'
 gem 'slim-rails'
+gem 'ruby-graphviz'
