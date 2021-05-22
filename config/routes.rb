@@ -8,11 +8,15 @@ Rails.application.routes.draw do
 
   resource :home, only: :index do
     collection do
-      get :product
-      get :category
-      get :article
+      get :posts
+      get :categories
+      get :articles
       get :search
     end
+  end
+
+  namespace :admin do
+    resources :admin
   end
 
   resources :posts

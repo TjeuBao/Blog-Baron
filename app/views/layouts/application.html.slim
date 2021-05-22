@@ -10,4 +10,10 @@ html
     = javascript_include_tag Ckeditor.cdn_url
 
   body
-    = yield
+    .wrapper
+    .content-page
+      .content
+        = render 'shared/nav_bar'
+        .container-fluild
+          = yield
+        = render 'shared/footer'
