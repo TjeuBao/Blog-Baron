@@ -6,11 +6,11 @@ default: &default
 
 development:
   <<: *default
-  database: blog-baron
+  database: btech
 
 test:
   <<: *default
-  database: blog-baron-test
+  database: btech_test
   host: localhost
 
 production:
