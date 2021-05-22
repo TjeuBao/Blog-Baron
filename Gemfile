@@ -15,7 +15,7 @@ gem 'puma'
 gem 'bootstrap-sass'
 gem 'sassc-rails'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -78,7 +78,7 @@ gem 'devise-jwt', '~> 0.5.9'
 gem 'devise-two-factor', '3.1.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 # qr codes
-gem 'carrierwave', '1.3.2'
+gem 'carrierwave', '~> 2.0'
 gem 'carrierwave-video'
 gem 'dry-configurable', '0.9.0'
 gem 'mini_magick'
@@ -93,3 +93,4 @@ gem 'sentry-ruby'
 gem 'slim'
 gem 'slim-rails'
 gem 'ruby-graphviz'
+gem 'ckeditor'
