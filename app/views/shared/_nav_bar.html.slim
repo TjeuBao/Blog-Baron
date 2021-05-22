@@ -1,0 +1,24 @@
+.navbar-custom
+  ul.list-unstyled.topbar-right-menu.float-right.mb-0
+    li.dropdown.notification-list
+      a.nav-link.dropdown-toggle.nav-user.arrow-none.mr-0 aria-expanded='false' aria-haspopup='false' data-toggle='dropdown' href='#' role='button'
+        span.account-user-avatar
+          = image_pack_tag 'users/avatar.svg', alt: 'user-image', class: 'rounded-circle'
+        span
+          span.account-position
+            = current_user.email if current_user.present?
+      .dropdown-menu.dropdown-menu-right.dropdown-menu-animated.profile-dropdown
+        = link_to edit_user_registration_path, class: 'dropdown-item notify-item' do
+          i.mdi.mdi-account-circle
+          span My Account
+        = link_to destroy_user_session_path, method: :delete, class: 'dropdown-item notify-item' do
+          i.mdi.mdi-logout
+          span Logout
+  button.button-menu-mobile.open-left.disable-btn
+    i.mdi.mdi-menu
+  .app-search
+    .input-group
+      = form_with(url: controller_name, method: 'get', local: true)
+        = text_field_tag(:search)
+        button.btn-primary type='submit'
+          | Search

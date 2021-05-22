@@ -1,0 +1,31 @@
+.left-side-menu
+  .slimscroll-menu style='height: 100vh !important;'
+    = link_to root_path, class: 'logo text-center' do
+      span.logo-lg
+        = image_pack_tag 'golden_owl_logo.svg', height: '30px'
+      span.logo-sm
+        = image_pack_tag 'logo_sm.png', height: '16px'
+    ul.metismenu.side-nav
+      li.side-nav-title.side-nav-item
+        | Navigation
+      li.side-nav-item
+        = link_to root_path, class: "side-nav-link #{active_items('home')}" do
+          i.dripicons-user
+          span User
+      li.side-nav-item
+        = link_to post_categories_path, class: "side-nav-link #{active_items('post_categories')}" do
+          i.dripicons-menu
+          span Blog
+      li.side-nav-item
+        = link_to posts_path, class: "side-nav-link #{active_items('posts')}" do
+          i.dripicons-document-new
+          span Post
+      li.side-nav-item
+        = link_to careers_path, class: "side-nav-link #{active_items('careers')}" do
+          i.dripicons-briefcase
+          span Article
+      li.side-nav-item
+        = link_to api_v1_subscriptions_path, class: "side-nav-link #{active_items('subscriptions')}" do
+          i.dripicons-briefcase
+          span Metrics
+    .clearfix
