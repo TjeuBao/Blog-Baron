@@ -2,7 +2,7 @@ doctype html
 html
   head
     title
-      | BTech Demo
+      | Demo
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
@@ -10,10 +10,6 @@ html
     = javascript_include_tag Ckeditor.cdn_url
 
   body
-    .wrapper
-    .content-page
-      .content
-        = render 'shared/nav_bar'
-        .container-fluild
-          = yield
-        = render 'shared/footer'
+    .content
+      .container-fluild
+        = yield

@@ -1,6 +1,6 @@
 .left-side-menu
   .slimscroll-menu style='height: 100vh !important;'
-    = link_to root_path, class: 'logo text-center' do
+    = link_to admin_admin_index_path, class: 'logo text-center' do
       span.logo-lg
         = image_pack_tag 'logo.png', height: '30px'
       span.logo-sm
@@ -9,9 +9,9 @@
       li.side-nav-title.side-nav-item
         | Navigation
       li.side-nav-item
-        = link_to root_path, class: "side-nav-link" do
-          i.dripicons-user
-          span User
+        = link_to admin_admin_index_path, class: "side-nav-link" do
+          i.dripicons-view-apps
+          span Menu
       li.side-nav-item
         = link_to posts_path, class: "side-nav-link" do
           i.dripicons-menu
@@ -22,10 +22,10 @@
           span Category
       li.side-nav-item
         = link_to articles_path, class: "side-nav-link" do
-          i.dripicons-briefcase
+          i.dripicons-blog
           span Article
       li.side-nav-item
         = link_to '#', class: "side-nav-link" do
-          i.dripicons-briefcase
+          i.dripicons-pamphlet
           span Metrics
     .clearfix
