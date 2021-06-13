@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace :admin do
+  namespace :admin, path: '/' do
     resources :admin
   end
 
