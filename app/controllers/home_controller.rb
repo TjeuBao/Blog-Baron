@@ -1,22 +1,11 @@
 class HomeController < ApplicationController
+  def index; end
 
-  def index
+  def product; end
 
-  end
+  def category; end
 
-  def product
+  def article; end
 
-  end
-
-  def category
-
-  end
-
-  def article
-
-  end
-
-  def search
-
-  end
+  def search; end
 end
