@@ -7,8 +7,13 @@
         .row
           .col-12
             .page-title-box
+              .page-title-right
+                ol.breadcrumb.m-0
+                  li.breadcrumb-item
+                    = link_to 'Home', admin_admin_index_path
+                  li.breadcrumb-item Category
               h4.page-title
-                | Dashbroad
+                | Category
         .row
           .col
             .card

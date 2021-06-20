@@ -1,11 +1,7 @@
 class Admin::AdminController < ApplicationController
+  before_action :authenticate_user!
+
   def index; end
-
-  def product; end
-
-  def category; end
-
-  def article; end
 
   def search; end
 end

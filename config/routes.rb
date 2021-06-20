@@ -17,12 +17,13 @@ Rails.application.routes.draw do
 
   namespace :admin, path: '/' do
     resources :admin
+    resources :posts
+    resources :categories
+    resources :articles
   end
 
-  resources :posts
-  resources :categories
+
   resources :likes
   resources :comments
-  resources :articles
   resources :notifications
 end

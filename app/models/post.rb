@@ -9,4 +9,5 @@
 #  updated_at :datetime         not null
 #
 class Post < ApplicationRecord
+  scope :available, -> { where deleted: false }
 end

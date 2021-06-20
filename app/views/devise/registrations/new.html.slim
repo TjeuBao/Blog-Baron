@@ -1,0 +1,28 @@
+.login.signup
+  h1 Sign up
+  = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+    = devise_error_messages!
+    .form-group.mt-2
+      = f.label :email, class:"mb-2"
+      = f.email_field :email, autofocus: true, class: "form-control"
+    .form-group
+      = f.label :password
+      - if @minimum_password_length
+        em
+          | (#{@minimum_password_length} characters minimum)
+      = f.password_field :password, autocomplete: "off", class: "form-control mt-2"
+    .form-group
+      = f.label :password_confirmation, class:"mb-2"
+      = f.password_field :password_confirmation, autocomplete: "off", class: "form-control"
+    .actions
+      = f.submit "Sign up", class: "btn btn-primary mb-2"
+  = render "devise/shared/links"
+
+  hr.mb-2
+  .orther-login
+    a.btn.btn-primary.login-btn.btn-fb
+      i.fab.fa-facebook.me-2
+      | Facebook
+    a.btn.btn-primary.login-btn.btn-gg
+      i.fab.fa-google.me-2
+      | Google
