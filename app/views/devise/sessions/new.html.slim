@@ -11,4 +11,3 @@
       = f.password_field :password, autocomplete: "off", placeholder: "Password", required: "required", type: "password", class: "form-control"
       - if devise_mapping.rememberable?
     = f.submit "Let me in.", class: "btn btn-primary btn-block btn-large"
-  = render "devise/shared/error_messages", resource: resource

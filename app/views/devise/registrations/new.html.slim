@@ -1,7 +1,7 @@
 .login.signup
   h1 Sign up
   = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-    = devise_error_messages!
+    = render "devise/shared/error_messages", resource: resource
     .form-group.mt-2
       = f.label :email, class:"mb-2"
       = f.email_field :email, autofocus: true, class: "form-control"
