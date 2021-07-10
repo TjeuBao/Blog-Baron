@@ -26,11 +26,12 @@ footer.home-footer {
 }
 
 .copyright {
+  position: relative;
+  bottom: -3px;
   text-align: left;
   margin-bottom: 0px;
   background: #333333;
   font-size: 16px;
-  position: relative;
   padding: 20px;
 }
 
