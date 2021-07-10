@@ -1,0 +1,60 @@
+.container
+  .title_module_main
+    h2
+      span
+        span Khách hàng nói gì
+        | &nbspvề chúng tôi
+  .button_review
+    #review.carousel.slide data-ride="carousel"
+      /! Indicators
+      ul.carousel-indicators.review-carousel
+        li.active data-slide-to="0" data-target="#review"
+        li data-slide-to="1" data-target="#review"
+        li data-slide-to="2" data-target="#review"
+      /! The slideshow
+      .carousel-inner
+        .carousel-item.active
+          .block-item-carousel
+            .item-left-carousel
+              = image_pack_tag 'reviewer_1.png', alt: "Nguyễn Lan"
+              h3
+                | Nguyễn Lan
+              p
+                | Graphic Design
+            .item-right-carousel
+              | Khám phá những tư vấn thiết kế nội thất, ngoại thất giải pháp tốt nhất cho không gian sống bên trong và ngoài nhà đẹp, mang lại nhiều những lợi ích về kinh tế và thẩm mỹ với những chia sẻ thiết kế nội ngoại thất từ các chuyên gia
+        .carousel-item
+          .block-item-carousel
+            .item-left-carousel
+              = image_pack_tag 'reviewer_2.png', alt: "Nguyễn Dũng"
+              h3
+                | Nguyễn Dũng
+              p
+                | Marketing
+            .item-right-carousel
+              | Khám phá những tư vấn thiết kế nội thất, ngoại thất giải pháp tốt nhất cho không gian sống bên trong và ngoài nhà đẹp, mang lại nhiều những lợi ích về kinh tế và thẩm mỹ với những chia sẻ thiết kế nội ngoại thất từ các chuyên gia
+        .carousel-item
+          .block-item-carousel
+            .item-left-carousel
+              = image_pack_tag 'reviewer_2.png', alt: "Nguyễn Mạnh"
+              h3
+                | Nguyễn Mạnh
+              p
+                | Design
+            .item-right-carousel
+              | Khám phá những tư vấn thiết kế nội thất, ngoại thất giải pháp tốt nhất cho không gian sống bên trong và ngoài nhà đẹp, mang lại nhiều những lợi ích về kinh tế và thẩm mỹ với những chia sẻ thiết kế nội ngoại thất từ các chuyên gia
+        .carousel-item
+          .block-item-carousel
+            .item-left-carousel
+              = image_pack_tag 'reviewer_2.png', alt: "Nguyễn An"
+              h3
+                | Nguyễn An
+              p
+                | IT Support
+            .item-right-carousel
+              | Khám phá những tư vấn thiết kế nội thất, ngoại thất giải pháp tốt nhất cho không gian sống bên trong và ngoài nhà đẹp, mang lại nhiều những lợi ích về kinh tế và thẩm mỹ với những chia sẻ thiết kế nội ngoại thất từ các chuyên gia
+      /! Left and right controls
+      a.carousel-control-prev data-slide="prev" href="#review"
+        span.carousel-control-prev-icon
+      a.carousel-control-next data-slide="next" href="#review"
+        span.carousel-control-next-icon
