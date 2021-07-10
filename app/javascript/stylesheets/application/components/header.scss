@@ -10,11 +10,12 @@ header.header {
     align-items: center;
 
     .list-contact {
-      display: inline-block;
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
 
       .single {
         display: inline-block;
-        padding-right: 110px;
         color: #fff;
         font-family: "Roboto",sans-serif;
         font-size: 14px;
@@ -118,22 +119,29 @@ header.header {
         z-index: 99;
       }
     }
-    .logo_center {
-      display: inline-block;
+
+    .container {
       position: relative;
-      z-index: 9;
+      display: flex;
+      justify-content: space-between;
 
-      .logo {
+      .logo_center {
         display: inline-block;
-        text-align: center;
-        line-height: 70px;
+        position: relative;
+        z-index: 9;
 
-        .logo-wrapper {
-          display: block;
+        .logo {
+          display: inline-block;
+          text-align: center;
+          line-height: 50px;
 
-          img {
-            max-width: 100%;
-            max-height: 100%;
+          .logo-wrapper {
+            display: block;
+
+            img.logo-image {
+              width: 180px;
+              height: 90px;
+            }
           }
         }
       }
@@ -269,7 +277,6 @@ header.header {
               display: block;
               text-align: left;
               font-size: 17px;
-              font-family: "Barlow",sans-serif;
               font-weight: 500;
               height: 60px;
               text-transform: uppercase;
