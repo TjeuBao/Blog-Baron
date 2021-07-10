@@ -1,3 +1,180 @@
 .home-footer {
   left: 0;
 }
+
+footer.home-footer {
+  padding: 0;
+  background: #252525;
+}
+
+.home-footer-list {
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid #3a3b3b;
+
+  li {
+    display: inline-block;
+    padding: 20px;
+
+    a {
+      font-family: "Roboto",sans-serif;
+      font-size: 16px;
+      color: #bebebe;
+      font-weight: 400;
+    }
+  }
+}
+
+.copyright {
+  text-align: left;
+  margin-bottom: 0px;
+  background: #333333;
+  font-size: 16px;
+  position: relative;
+  padding: 20px;
+}
+
+.mid-footer {
+  padding: 30px 0;
+}
+
+.block-logo {
+  margin-bottom: 30px;
+
+  a {
+    display: block;
+
+    img {
+      border: 0 none;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.des-footer {
+  color: #bebebe;
+  line-height: 26px;
+  margin: 0 0 15px;
+  font-size: 15px;
+  font-family: "Roboto",sans-serif;
+}
+
+.linked-social {
+  .social.brower {
+    margin-right: 10px;
+    display: inline-block;
+    img.loaded {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  a.social {
+    position: relative;
+    bottom: 3px;
+
+  }
+
+  a.facebook {
+    margin-right: 5px;
+  }
+
+  img.loaded {
+    width: auto;
+    height: auto;
+  }
+}
+
+.title-menu {
+  font-family: "Roboto",sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+  font-size: 16px;
+  margin: 20px 0 25px 0;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+
+  a {
+    color: #fff;
+  }
+}
+
+.content-contact {
+  margin-bottom: 25px;
+  line-height: 25px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: #cedf02;
+    float: left;
+    margin-top: 3px;
+  }
+
+  .fa-phone {
+    transform: rotate(90deg);
+  }
+
+  span.list_footer {
+    width: calc(100% - 16px);
+    float: left;
+    padding-left: 10px;
+    color: #bebebe;
+    font-family: "Roboto",sans-serif;
+
+    a {
+      color: #bebebe;
+    }
+  }
+}
+
+.blog_list {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #3a3b3b;
+
+  .thumb-left {
+    width: 65px;
+    float: left;
+
+    a {
+      img.loaded {
+        width: 65px;
+        height: auto;
+      }
+    }
+  }
+
+  .name-right {
+    float: left;
+    padding-left: 30px;
+    width: calc(100% - 65px);
+
+    h3 {
+      margin-top: 0;
+      padding-top: 0;
+      font-weight: 400;
+      position: relative;
+      margin: 0;
+      font-size: 16px;
+      font-family: "Roboto",sans-serif;
+
+      a {
+        color: #acacac;
+      }
+    }
+  }
+}
+
+.blog_list:first-child {
+  margin-top: 15px;
+}
+
+.btn_see {
+  font-size: 15px;
+  color: #acacac;
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+}

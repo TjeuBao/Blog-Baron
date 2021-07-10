@@ -1,7 +1,11 @@
 header.header
   = render 'home/header'
+
+section.section-slider
+  .slider-top
+    = render 'home/head_slide'
+
 section.section
-  .container.mb-3
-    .d-flex.justify-content-center
+  = render 'home/header'
 
 = render 'shared/home_footer'
