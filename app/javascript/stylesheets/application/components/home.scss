@@ -67,3 +67,102 @@ table {
   width: 100%;
   height: 500px;
 }
+
+.section_step {
+  position: relative;
+  padding: 75px 0;
+  background: #fff;
+
+  .title_module_main {
+    margin-bottom: 60px;
+
+    h2 {
+      font-family: "Barlow",sans-serif;
+      letter-spacing: 0;
+      font-size: 29px;
+      margin: 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      color: #000000;
+
+      span.step-text {
+        color: #a8b502;
+      }
+    }
+  }
+
+  .col-step {
+    text-align: center;
+
+    &:first-child:before {
+      background-image: url(//bizweb.dktcdn.net/100/422/313/themes/823050/assets/arrow-step.png?1621843462295);
+      content: "";
+      width: 91px;
+      height: 41px;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      display: block;
+      line-height: 37px;
+      position: absolute;
+      left: 100%;
+      top: 35%;
+      transform: translateX(-40px) translateY(-50%);
+    }
+
+    &:nth-child(2):before {
+      background-image: url(//bizweb.dktcdn.net/100/422/313/themes/823050/assets/arrow-step-2.png?1621843462295);
+      content: "";
+      width: 100px;
+      height: 40px;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      display: block;
+      line-height: 32px;
+      position: absolute;
+      left: 100%;
+      top: 35%;
+      transform: translateX(-40px) translateY(-50%);
+    }
+
+    .image_step {
+      display: block;
+      margin-bottom: 15px;
+
+      img.loaded {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    .number_step {
+      font-family: "Barlow",sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #999999;
+      height: 24px;
+      overflow: hidden;
+      display: inline-block;
+      margin: 0 auto;
+      line-height: 36px;
+    }
+
+    h3.title_step {
+      font-family: "Barlow",sans-serif;
+      font-size: 20px;
+      color: #18191b;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    p {
+      padding: 0 10px;
+      font-family: "Barlow",sans-serif;
+      font-size: 16px;
+      color: #333;
+      margin: 0;
+      line-height: 24px;
+    }
+  }
+}
