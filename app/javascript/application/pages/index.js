@@ -1,2 +1,3 @@
 // Import your pages js here....
 import './admin';
+import './home';
